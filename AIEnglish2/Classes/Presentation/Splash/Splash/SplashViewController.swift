@@ -72,7 +72,8 @@ private extension SplashViewController {
             }
             present(vc, animated: true)
         case .main:
-            UIApplication.shared.keyWindow?.rootViewController = MainViewController.make(requestReview: false)
+            let nc = NavigationController(rootViewController: MainViewController.make(requestReview: true))
+            UIApplication.shared.keyWindow?.rootViewController = nc
         }
     }
     

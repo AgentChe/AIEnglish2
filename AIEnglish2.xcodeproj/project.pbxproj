@@ -123,7 +123,6 @@
 		DE638DA62D8BDA6600D00CC0 /* AccountHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CBC2D8BDA6600D00CC0 /* AccountHistoryCell.swift */; };
 		DE638DA72D8BDA6600D00CC0 /* AssistantRecentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638D1E2D8BDA6600D00CC0 /* AssistantRecentRequest.swift */; };
 		DE638DA82D8BDA6600D00CC0 /* ARTLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CAB2D8BDA6600D00CC0 /* ARTLoadingCell.swift */; };
-		DE638DA92D8BDA6600D00CC0 /* WebController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C722D8BDA6600D00CC0 /* WebController.swift */; };
 		DE638DAA2D8BDA6600D00CC0 /* PaygateInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638D022D8BDA6600D00CC0 /* PaygateInfoCell.swift */; };
 		DE638DAB2D8BDA6600D00CC0 /* AmplitudeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C642D8BDA6600D00CC0 /* AmplitudeManager.swift */; };
 		DE638DAC2D8BDA6600D00CC0 /* AIRAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CE72D8BDA6600D00CC0 /* AIRAnimationView.swift */; };
@@ -182,7 +181,6 @@
 		DE638C6F2D8BDA6600D00CC0 /* PaddingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingLabel.swift; sourceTree = "<group>"; };
 		DE638C702D8BDA6600D00CC0 /* PaddingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaddingTextField.swift; sourceTree = "<group>"; };
 		DE638C712D8BDA6600D00CC0 /* TapAreaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapAreaButton.swift; sourceTree = "<group>"; };
-		DE638C722D8BDA6600D00CC0 /* WebController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebController.swift; sourceTree = "<group>"; };
 		DE638C742D8BDA6600D00CC0 /* Collection+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
 		DE638C752D8BDA6600D00CC0 /* ObservableAndSingle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableAndSingle+Extension.swift"; sourceTree = "<group>"; };
 		DE638C762D8BDA6600D00CC0 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
@@ -431,7 +429,6 @@
 				DE638C6F2D8BDA6600D00CC0 /* PaddingLabel.swift */,
 				DE638C702D8BDA6600D00CC0 /* PaddingTextField.swift */,
 				DE638C712D8BDA6600D00CC0 /* TapAreaButton.swift */,
-				DE638C722D8BDA6600D00CC0 /* WebController.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -572,9 +569,9 @@
 			isa = PBXGroup;
 			children = (
 				DE638CA22D8BDA6600D00CC0 /* Views */,
-				DE638CA32D8BDA6600D00CC0 /* AssistantMainView.swift */,
 				DE638CA42D8BDA6600D00CC0 /* AssistantMainViewController.swift */,
 				DE638CA52D8BDA6600D00CC0 /* AssistantMainViewModel.swift */,
+				DE638CA32D8BDA6600D00CC0 /* AssistantMainView.swift */,
 			);
 			path = AssistantMain;
 			sourceTree = "<group>";
@@ -622,9 +619,9 @@
 			isa = PBXGroup;
 			children = (
 				DE638CB22D8BDA6600D00CC0 /* Views */,
-				DE638CB32D8BDA6600D00CC0 /* AssistantResultView.swift */,
 				DE638CB42D8BDA6600D00CC0 /* AssistantResultViewController.swift */,
 				DE638CB52D8BDA6600D00CC0 /* AssistantResultViewModel.swift */,
+				DE638CB32D8BDA6600D00CC0 /* AssistantResultView.swift */,
 			);
 			path = AssistantResult;
 			sourceTree = "<group>";
@@ -680,9 +677,9 @@
 			isa = PBXGroup;
 			children = (
 				DE638CC22D8BDA6600D00CC0 /* Views */,
-				DE638CC32D8BDA6600D00CC0 /* AccountView.swift */,
 				DE638CC42D8BDA6600D00CC0 /* AccountViewController.swift */,
 				DE638CC52D8BDA6600D00CC0 /* AccountViewModel.swift */,
+				DE638CC32D8BDA6600D00CC0 /* AccountView.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -719,9 +716,9 @@
 			isa = PBXGroup;
 			children = (
 				DE638CCE2D8BDA6600D00CC0 /* Views */,
-				DE638CCF2D8BDA6600D00CC0 /* HistoryView.swift */,
 				DE638CD02D8BDA6600D00CC0 /* HistoryViewController.swift */,
 				DE638CD12D8BDA6600D00CC0 /* HistoryViewModel.swift */,
+				DE638CCF2D8BDA6600D00CC0 /* HistoryView.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -1361,7 +1358,6 @@
 				DE638DA62D8BDA6600D00CC0 /* AccountHistoryCell.swift in Sources */,
 				DE638DA72D8BDA6600D00CC0 /* AssistantRecentRequest.swift in Sources */,
 				DE638DA82D8BDA6600D00CC0 /* ARTLoadingCell.swift in Sources */,
-				DE638DA92D8BDA6600D00CC0 /* WebController.swift in Sources */,
 				DE638DAA2D8BDA6600D00CC0 /* PaygateInfoCell.swift in Sources */,
 				DE638DAB2D8BDA6600D00CC0 /* AmplitudeManager.swift in Sources */,
 				DE638DAC2D8BDA6600D00CC0 /* AIRAnimationView.swift in Sources */,
