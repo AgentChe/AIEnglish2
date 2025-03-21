@@ -7,16 +7,14 @@
 
 import Foundation
 
-// TODO
-// TODO: Firebase plist
 final class GlobalDefinitions {
     static let domain = "https://science.camplain-apps.com"
     static let apiKey = "zMvSnNSvO7NMJbdviV"
     
     static let otterScaleHost = "https://api.korrekted.com"
-    static let otterScaleApiKey = "tVmGTQdWNNhVPa1s"
+    static let otterScaleApiKey = "yBjUwwah6jnokLgJ"
     
-    static let applicationTag = "ENGLISH_SOLVER"
+    static let applicationTag = "ENGLISH_SOLVER_2"
     static let amplitudeApiKey = "784ee0e6cb07cb515f3b080b4b415b27"
     
     static let termsOfServiceUrl = URL(string: "https://camplain-apps.com/terms-of-use.html")!
@@ -24,7 +22,7 @@ final class GlobalDefinitions {
     static let contactUsUrl = URL(string: "https://camplain-apps.com/contacts.html")!
     
     enum Paygate {
-        static let yearly = "app.iphone.science.english.yearly"
-        static let weekly = "app.iphone.science.english.weekly"
+        static let yearly = "app.iphone.science.british.yearly"
+        static let weekly = "app.iphone.science.british.weekly"
     }
 }

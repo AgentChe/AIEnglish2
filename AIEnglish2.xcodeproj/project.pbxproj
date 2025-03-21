@@ -11,7 +11,6 @@
 		DE638C5C2D8BD91B00D00CC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE638C532D8BD91B00D00CC0 /* Assets.xcassets */; };
 		DE638C5E2D8BD91B00D00CC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE638C562D8BD91B00D00CC0 /* LaunchScreen.storyboard */; };
 		DE638D372D8BDA6600D00CC0 /* ART.Loader.json in Resources */ = {isa = PBXBuildFile; fileRef = DE638CA72D8BDA6600D00CC0 /* ART.Loader.json */; };
-		DE638D392D8BDA6600D00CC0 /* PushNotificationsAuthorizationStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C832D8BDA6600D00CC0 /* PushNotificationsAuthorizationStatus.swift */; };
 		DE638D3A2D8BDA6600D00CC0 /* AccountAboutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CBB2D8BDA6600D00CC0 /* AccountAboutCell.swift */; };
 		DE638D3B2D8BDA6600D00CC0 /* AssistantResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CB52D8BDA6600D00CC0 /* AssistantResultViewModel.swift */; };
 		DE638D3C2D8BDA6600D00CC0 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CC32D8BDA6600D00CC0 /* AccountView.swift */; };
@@ -74,7 +73,6 @@
 		DE638D752D8BDA6600D00CC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C982D8BDA6600D00CC0 /* SceneDelegate.swift */; };
 		DE638D762D8BDA6600D00CC0 /* Weak.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C922D8BDA6600D00CC0 /* Weak.swift */; };
 		DE638D772D8BDA6600D00CC0 /* AssistantMainTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CA02D8BDA6600D00CC0 /* AssistantMainTableView.swift */; };
-		DE638D782D8BDA6600D00CC0 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C662D8BDA6600D00CC0 /* FirebaseManager.swift */; };
 		DE638D792D8BDA6600D00CC0 /* TryAgainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638D112D8BDA6600D00CC0 /* TryAgainView.swift */; };
 		DE638D7A2D8BDA6600D00CC0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CD92D8BDA6600D00CC0 /* MainViewController.swift */; };
 		DE638D7B2D8BDA6600D00CC0 /* AssistantAnalyzeProcessRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638D1C2D8BDA6600D00CC0 /* AssistantAnalyzeProcessRequest.swift */; };
@@ -93,7 +91,6 @@
 		DE638D882D8BDA6600D00CC0 /* UIView+RxExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C7C2D8BDA6600D00CC0 /* UIView+RxExtension.swift */; };
 		DE638D892D8BDA6600D00CC0 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C792D8BDA6600D00CC0 /* UIDevice+Extension.swift */; };
 		DE638D8A2D8BDA6600D00CC0 /* AssistantResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CB42D8BDA6600D00CC0 /* AssistantResultViewController.swift */; };
-		DE638D8B2D8BDA6600D00CC0 /* PushNotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C862D8BDA6600D00CC0 /* PushNotificationsManager.swift */; };
 		DE638D8C2D8BDA6600D00CC0 /* TextAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C912D8BDA6600D00CC0 /* TextAttributes.swift */; };
 		DE638D8D2D8BDA6600D00CC0 /* ObservableAndSingle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C752D8BDA6600D00CC0 /* ObservableAndSingle+Extension.swift */; };
 		DE638D8E2D8BDA6600D00CC0 /* AccountTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CBD2D8BDA6600D00CC0 /* AccountTitleCell.swift */; };
@@ -106,7 +103,6 @@
 		DE638D952D8BDA6600D00CC0 /* AssistantAnalyzeManualRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638D1B2D8BDA6600D00CC0 /* AssistantAnalyzeManualRequest.swift */; };
 		DE638D962D8BDA6600D00CC0 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CD42D8BDA6600D00CC0 /* TabView.swift */; };
 		DE638D972D8BDA6600D00CC0 /* IAPErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638D282D8BDA6600D00CC0 /* IAPErrorHelper.swift */; };
-		DE638D982D8BDA6600D00CC0 /* FacebookManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C652D8BDA6600D00CC0 /* FacebookManager.swift */; };
 		DE638D992D8BDA6600D00CC0 /* RequestReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C682D8BDA6600D00CC0 /* RequestReview.swift */; };
 		DE638D9A2D8BDA6600D00CC0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C892D8BDA6600D00CC0 /* NetworkError.swift */; };
 		DE638D9B2D8BDA6600D00CC0 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C902D8BDA6600D00CC0 /* ScreenSize.swift */; };
@@ -133,7 +129,6 @@
 		DE638DB12D8BDA6600D00CC0 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CF92D8BDA6600D00CC0 /* OnboardingView.swift */; };
 		DE638DB22D8BDA6600D00CC0 /* ACEView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CE42D8BDA6600D00CC0 /* ACEView.swift */; };
 		DE638DB32D8BDA6600D00CC0 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638D0E2D8BDA6600D00CC0 /* SplashViewModel.swift */; };
-		DE638DB42D8BDA6600D00CC0 /* PushNotificationsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C842D8BDA6600D00CC0 /* PushNotificationsModel.swift */; };
 		DE638DB52D8BDA6600D00CC0 /* RestAPITransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638C812D8BDA6600D00CC0 /* RestAPITransport.swift */; };
 		DE638DB62D8BDA6600D00CC0 /* AssistantImageResizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CEA2D8BDA6600D00CC0 /* AssistantImageResizeViewController.swift */; };
 		DE638DB72D8BDA6600D00CC0 /* HistoryTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE638CCB2D8BDA6600D00CC0 /* HistoryTableView.swift */; };
@@ -171,8 +166,6 @@
 		DE638C542D8BD91B00D00CC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE638C552D8BD91B00D00CC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE638C642D8BDA6600D00CC0 /* AmplitudeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplitudeManager.swift; sourceTree = "<group>"; };
-		DE638C652D8BDA6600D00CC0 /* FacebookManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookManager.swift; sourceTree = "<group>"; };
-		DE638C662D8BDA6600D00CC0 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		DE638C682D8BDA6600D00CC0 /* RequestReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestReview.swift; sourceTree = "<group>"; };
 		DE638C692D8BDA6600D00CC0 /* RxActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxActivityIndicator.swift; sourceTree = "<group>"; };
 		DE638C6B2D8BDA6600D00CC0 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
@@ -193,9 +186,6 @@
 		DE638C7E2D8BDA6600D00CC0 /* DefaultRequestWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRequestWrapper.swift; sourceTree = "<group>"; };
 		DE638C802D8BDA6600D00CC0 /* APIRequestBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestBody.swift; sourceTree = "<group>"; };
 		DE638C812D8BDA6600D00CC0 /* RestAPITransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPITransport.swift; sourceTree = "<group>"; };
-		DE638C832D8BDA6600D00CC0 /* PushNotificationsAuthorizationStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsAuthorizationStatus.swift; sourceTree = "<group>"; };
-		DE638C842D8BDA6600D00CC0 /* PushNotificationsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsModel.swift; sourceTree = "<group>"; };
-		DE638C862D8BDA6600D00CC0 /* PushNotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsManager.swift; sourceTree = "<group>"; };
 		DE638C882D8BDA6600D00CC0 /* ContentError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentError.swift; sourceTree = "<group>"; };
 		DE638C892D8BDA6600D00CC0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		DE638C8A2D8BDA6600D00CC0 /* SignError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignError.swift; sourceTree = "<group>"; };
@@ -397,8 +387,6 @@
 			isa = PBXGroup;
 			children = (
 				DE638C642D8BDA6600D00CC0 /* AmplitudeManager.swift */,
-				DE638C652D8BDA6600D00CC0 /* FacebookManager.swift */,
-				DE638C662D8BDA6600D00CC0 /* FirebaseManager.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -467,24 +455,6 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		DE638C852D8BDA6600D00CC0 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				DE638C832D8BDA6600D00CC0 /* PushNotificationsAuthorizationStatus.swift */,
-				DE638C842D8BDA6600D00CC0 /* PushNotificationsModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		DE638C872D8BDA6600D00CC0 /* PushNotifications */ = {
-			isa = PBXGroup;
-			children = (
-				DE638C852D8BDA6600D00CC0 /* Models */,
-				DE638C862D8BDA6600D00CC0 /* PushNotificationsManager.swift */,
-			);
-			path = PushNotifications;
-			sourceTree = "<group>";
-		};
 		DE638C8B2D8BDA6600D00CC0 /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -519,7 +489,6 @@
 				DE638C732D8BDA6600D00CC0 /* CustomViews */,
 				DE638C7D2D8BDA6600D00CC0 /* Extension */,
 				DE638C822D8BDA6600D00CC0 /* Network */,
-				DE638C872D8BDA6600D00CC0 /* PushNotifications */,
 				DE638C942D8BDA6600D00CC0 /* Utils */,
 				DE638C952D8BDA6600D00CC0 /* AppDelegate.swift */,
 				DE638C962D8BDA6600D00CC0 /* Appearance.swift */,
@@ -1246,7 +1215,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE638D392D8BDA6600D00CC0 /* PushNotificationsAuthorizationStatus.swift in Sources */,
 				DE638D3A2D8BDA6600D00CC0 /* AccountAboutCell.swift in Sources */,
 				DE638D3B2D8BDA6600D00CC0 /* AssistantResultViewModel.swift in Sources */,
 				DE638D3C2D8BDA6600D00CC0 /* AccountView.swift in Sources */,
@@ -1309,7 +1277,6 @@
 				DE638D752D8BDA6600D00CC0 /* SceneDelegate.swift in Sources */,
 				DE638D762D8BDA6600D00CC0 /* Weak.swift in Sources */,
 				DE638D772D8BDA6600D00CC0 /* AssistantMainTableView.swift in Sources */,
-				DE638D782D8BDA6600D00CC0 /* FirebaseManager.swift in Sources */,
 				DE638D792D8BDA6600D00CC0 /* TryAgainView.swift in Sources */,
 				DE638D7A2D8BDA6600D00CC0 /* MainViewController.swift in Sources */,
 				DE638D7B2D8BDA6600D00CC0 /* AssistantAnalyzeProcessRequest.swift in Sources */,
@@ -1328,7 +1295,6 @@
 				DE638D882D8BDA6600D00CC0 /* UIView+RxExtension.swift in Sources */,
 				DE638D892D8BDA6600D00CC0 /* UIDevice+Extension.swift in Sources */,
 				DE638D8A2D8BDA6600D00CC0 /* AssistantResultViewController.swift in Sources */,
-				DE638D8B2D8BDA6600D00CC0 /* PushNotificationsManager.swift in Sources */,
 				DE638D8C2D8BDA6600D00CC0 /* TextAttributes.swift in Sources */,
 				DE638D8D2D8BDA6600D00CC0 /* ObservableAndSingle+Extension.swift in Sources */,
 				DE638D8E2D8BDA6600D00CC0 /* AccountTitleCell.swift in Sources */,
@@ -1341,7 +1307,6 @@
 				DE638D952D8BDA6600D00CC0 /* AssistantAnalyzeManualRequest.swift in Sources */,
 				DE638D962D8BDA6600D00CC0 /* TabView.swift in Sources */,
 				DE638D972D8BDA6600D00CC0 /* IAPErrorHelper.swift in Sources */,
-				DE638D982D8BDA6600D00CC0 /* FacebookManager.swift in Sources */,
 				DE638D992D8BDA6600D00CC0 /* RequestReview.swift in Sources */,
 				DE638D9A2D8BDA6600D00CC0 /* NetworkError.swift in Sources */,
 				DE638D9B2D8BDA6600D00CC0 /* ScreenSize.swift in Sources */,
@@ -1368,7 +1333,6 @@
 				DE638DB12D8BDA6600D00CC0 /* OnboardingView.swift in Sources */,
 				DE638DB22D8BDA6600D00CC0 /* ACEView.swift in Sources */,
 				DE638DB32D8BDA6600D00CC0 /* SplashViewModel.swift in Sources */,
-				DE638DB42D8BDA6600D00CC0 /* PushNotificationsModel.swift in Sources */,
 				DE638DB52D8BDA6600D00CC0 /* RestAPITransport.swift in Sources */,
 				DE638DB62D8BDA6600D00CC0 /* AssistantImageResizeViewController.swift in Sources */,
 				DE638DB72D8BDA6600D00CC0 /* HistoryTableView.swift in Sources */,

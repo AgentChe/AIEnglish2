@@ -6,6 +6,7 @@
 //
 
 import RxSwift
+import RxCocoa
 import OtterScaleiOS
 
 final class PaygateInteractor {
@@ -21,71 +22,97 @@ final class PaygateInteractor {
     
     private lazy var iapManager = IAPManager()
     private lazy var sessionManager = SessionManager()
+    private lazy var profileManager = ProfileManager()
+    
+    private lazy var disposables = [Disposable]()
+    
+    private lazy var callback = PublishRelay<PurchaseActionResult>()
+    
+    deinit {
+        OtterScale.shared.removeReceiptValidation(delegate: self)
+        
+        disposables.forEach { $0.dispose() }
+    }
 }
 
 // MARK: Public
 extension PaygateInteractor {
     func makeActiveSubscription(by action: Action) -> Single<PurchaseActionResult> {
+        OtterScale.shared.removeReceiptValidation(delegate: self)
+        OtterScale.shared.addReceiptValidation(delegate: self)
+        
+        disposables.forEach { $0.dispose() }
+        
+        let disposable: Disposable
         switch action {
         case .buy(let productId):
-            return purchase(productId: productId)
+            disposable = purchase(productId: productId)
         case .restore:
-            return restore()
+            disposable = restore()
         }
+        
+        disposables = [disposable]
+        
+        return Single<PurchaseActionResult>.create { [weak self] event in
+            guard let self = self else {
+                return Disposables.create()
+            }
+            
+            let disposable = self.callback.subscribe(onNext: { result in
+                event(.success(result))
+            })
+            
+            self.disposables.append(disposable)
+            
+            return Disposables.create()
+        }
+    }
+}
+
+// MARK: OtterScaleReceiptValidationDelegate
+extension PaygateInteractor: OtterScaleReceiptValidationDelegate {
+    func otterScaleDidValidatedReceipt(with result: AppStoreValidateResult?) {
+        OtterScale.shared.removeReceiptValidation(delegate: self)
+        
+        let complete: Single<Void> = {
+            let anonymousId = sessionManager.anonymousId
+            let internalId = sessionManager.internalId
+        
+            return (anonymousId == internalId) ? profileManager.create() : profileManager.binding()
+                .catchAndReturn(())
+        }()
+        
+        let disposable = complete.subscribe(onSuccess: { [weak self] in
+            guard let self else { return }
+            
+            let hasActiveSubscriptions = sessionManager.hasActiveSubscriptions()
+            let callbackResult = PurchaseActionResult.completed(hasActiveSubscriptions)
+            callback.accept(callbackResult)
+        })
+        
+        disposables.append(disposable)
     }
 }
 
 // MARK: Private
 private extension PaygateInteractor {
-    func purchase(productId: String) -> Single<PurchaseActionResult> {
+    func purchase(productId: String) -> Disposable {
         iapManager
             .buyProduct(with: productId)
-            .flatMap { iapResult -> Single<PurchaseActionResult> in
-                if case .cancelled = iapResult {
-                    return .just(.cancelled)
+            .subscribe(onSuccess: { [weak self] result in
+                guard let self = self, case .cancelled = result else {
+                    return
                 }
                 
-                return Single<PurchaseActionResult>.create { single in
-                    OtterScale.shared.updatePaymentData(forceValidation: true, completion: { [weak self] paymentData in
-                        guard let self else { return }
-                        
-                        let isTrial: Bool = {
-                            guard let subs = paymentData?.subscriptions.appleAppStore.last(where: { $0.productID == productId }) else {
-                                return false
-                            }
-                            return subs.status == .trial
-                        }()
-                        if !isTrial {
-                            FacebookManager.shared.logEvent(name: "fb_mobile_purchase")
-                        }
-                        
-                        let hasActiveSubscriptions = sessionManager.hasActiveSubscriptions()
-                        let result = PurchaseActionResult.completed(hasActiveSubscriptions)
-                        single(.success(result))
-                    }, notifyMediator: false)
-                    
-                    return Disposables.create()
-                }
-            }
-            .catchAndReturn(.completed(false))
+                self.callback.accept(.cancelled)
+            })
     }
     
-    func restore() -> Single<PurchaseActionResult> {
+    func restore() -> Disposable {
         iapManager
             .restorePurchases()
-            .flatMap { iapResult -> Single<PurchaseActionResult> in
-                Single<PurchaseActionResult>.create { single in
-                    OtterScale.shared.updatePaymentData(forceValidation: true, completion: { [weak self] paymentData in
-                        guard let self else { return }
-                        
-                        let hasActiveSubscriptions = sessionManager.hasActiveSubscriptions()
-                        let result = PurchaseActionResult.completed(hasActiveSubscriptions)
-                        single(.success(result))
-                    }, notifyMediator: false)
-                    
-                    return Disposables.create()
-                }
-            }
-            .catchAndReturn(.completed(false))
+            .subscribe(onFailure: { [weak self] error in
+                self?.callback.accept(.completed(false))
+            })
     }
 }
